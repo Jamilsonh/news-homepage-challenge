@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 25%;
-  height: 500px;
+  height: 650px;
   background-color: hsl(240, 100%, 5%);
   display: flex;
   flex-direction: column;
