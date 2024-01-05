@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerMain = styled.div`
   display: flex;
   flex-direction: column;
   width: 70%;
-  align-items: center;
+  align-items: space-between;
   border: 1px solid black;
 `;
 

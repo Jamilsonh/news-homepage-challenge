@@ -1,27 +1,28 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerMain = styled.div`
   width: 25%;
-  height: 650px;
+  height: 550px;
   background-color: hsl(240, 100%, 5%);
   display: flex;
-  flex-direction: column;
 `;
 
-export const ContentBox = styled.div`
+export const ContainerArea = styled.div`
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 180px;
-  color: white;
-  margin: 0 auto;
+  justify-content: space-around;
+  height: 100%;
+`;
 
-  h1 {
-    font-size: 20px;
-  }
+export const Title = styled.h1`
+  color: hsl(35, 77%, 62%);
+  font-size: 45px;
 
-  h2 {
-    font-size: 15px;
-    font-weight: 300;
-  }
+  margin: 0;
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 25px;
 `;

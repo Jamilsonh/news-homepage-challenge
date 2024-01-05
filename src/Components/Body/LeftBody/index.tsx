@@ -1,17 +1,17 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 import {
   ButtonReadMore,
   ContainerBottom,
   ContainerLeft,
   ContainerMain,
   ContainerRight,
-} from "./styles";
+} from './styles';
 
 export default function LeftBody() {
   return (
     <ContainerMain>
-      <Image src='/img-desktop.jpg' width={1022} height={420} alt='oi' />
+      <Image src='/img-desktop.jpg' width={949} height={390} alt='oi' />
       <ContainerBottom>
         <ContainerLeft>
           <h1>The Bright Future of Web 3.0?</h1>
