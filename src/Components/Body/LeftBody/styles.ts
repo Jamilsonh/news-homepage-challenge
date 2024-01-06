@@ -12,13 +12,19 @@ export const ContainerBottom = styled.div`
   display: flex;
   width: 100%;
   height: 200px;
+  margin-top: 30px;
 `;
 
 export const ContainerLeft = styled.div`
   width: 50%;
 
+  display: flex;
+  justify-content: flex-start;
+
   h1 {
     font-size: 55px;
+    margin: 0;
+    width: 70%;
   }
 `;
 
