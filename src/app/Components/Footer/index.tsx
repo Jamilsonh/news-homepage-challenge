@@ -8,20 +8,20 @@ export default function Footer() {
       <CardFooter
         title='Reviving Retro PCs'
         subtitle='What happens when old PCs are given modern upgrades?'
-        number='1'
-        image='/img-desktop.jpg'
+        number='01'
+        image='/retro-pcs.jpg'
       />
       <CardFooter
         title='Top 10 Laptops of 2022'
-        subtitle='What happens when old PCs are given modern upgrades?'
-        number='2'
-        image='/img-desktop.jpg'
+        subtitle='Our best picks for various needs and budgets.'
+        number='02'
+        image='/top-laptops.jpg'
       />
       <CardFooter
-        title='Reviving Retro PCs'
-        subtitle='What happens when old PCs are given modern upgrades?'
-        number='3'
-        image='/img-desktop.jpg'
+        title='The Growth of Gaming'
+        subtitle='How the pandemic has sparked fresh opportunities.'
+        number='03'
+        image='/gaming-growth.jpg'
       />
     </Container>
   );

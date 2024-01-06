@@ -5,7 +5,12 @@ export const ContainerMain = styled.div`
   flex-direction: column;
   width: 70%;
   align-items: space-between;
-  border: 1px solid black;
+`;
+
+export const ContainerImage = styled.div`
+  display: flex;
+  width: 100%;
+  height: 350px;
 `;
 
 export const ContainerBottom = styled.div`
@@ -30,18 +35,24 @@ export const ContainerLeft = styled.div`
 
 export const ContainerRight = styled.div`
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   h2 {
     font-size: 20px;
     font-weight: 300;
+    margin: 0;
+    line-height: 1.7;
   }
 `;
 
 export const ButtonReadMore = styled.button`
-  padding: 10px 25px;
+  width: 200px;
+  padding: 18px 25px;
   text-decoration: none;
   border: none;
-  background-color: hsl(5, 85%, 63%);
+  background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 `;

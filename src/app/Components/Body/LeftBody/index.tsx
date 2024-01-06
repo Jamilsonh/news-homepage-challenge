@@ -3,6 +3,7 @@ import React from 'react';
 import {
   ButtonReadMore,
   ContainerBottom,
+  ContainerImage,
   ContainerLeft,
   ContainerMain,
   ContainerRight,
@@ -11,7 +12,19 @@ import {
 export default function LeftBody() {
   return (
     <ContainerMain>
-      <Image src='/img-desktop.jpg' width={949} height={390} alt='oi' />
+      <ContainerImage>
+        <Image
+          src='/img-desktop.jpg'
+          alt='Picture of the author'
+          sizes='100vw'
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
+          width={949}
+          height={390}
+        />
+      </ContainerImage>
       <ContainerBottom>
         <ContainerLeft>
           <h1>The Bright Future of Web 3.0?</h1>

@@ -1,4 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
+export const ContainerMain = styled.div`
+  width: 1440px;
+  margin: 0 auto;
+`;
 
 export const BodyContainer = styled.div`
   display: flex;
