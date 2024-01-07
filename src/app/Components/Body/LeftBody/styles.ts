@@ -58,4 +58,9 @@ export const ButtonReadMore = styled.button`
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
   letter-spacing: 5px;
+
+  &:hover {
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
+  }
 `;
