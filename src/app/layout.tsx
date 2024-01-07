@@ -1,7 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+
 import './globals.css';
 import StyledComponentsRegistry from './lib/registry';
+import { Inter } from 'next/font/google';
+
+const mainFontFamily = Inter({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-main',
+});
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' className={mainFontFamily.className}>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>

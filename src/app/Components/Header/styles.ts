@@ -13,10 +13,11 @@ export const Container = styled.div`
 
 export const RightMenu = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 35px;
 
   h2 {
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
     &:hover {
       color: hsl(35, 77%, 62%);
       cursor: pointer;

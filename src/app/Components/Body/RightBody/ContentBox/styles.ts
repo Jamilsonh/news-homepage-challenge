@@ -15,7 +15,7 @@ export const TextTitle = styled.h1`
 `;
 export const TextSubTitle = styled.h2`
   font-size: 15px;
-
   margin: 0;
   font-weight: 300;
+  color: hsl(233, 8%, 79%);
 `;

@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const ContainerMain = styled.div`
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 67%;
   align-items: space-between;
+  height: 580px;
 `;
 
 export const ContainerImage = styled.div`
@@ -22,14 +23,16 @@ export const ContainerBottom = styled.div`
 
 export const ContainerLeft = styled.div`
   width: 50%;
-
   display: flex;
   justify-content: flex-start;
 
   h1 {
-    font-size: 55px;
+    font-size: 62px;
     margin: 0;
-    width: 70%;
+    width: 85%;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    line-height: 1;
   }
 `;
 
@@ -40,19 +43,19 @@ export const ContainerRight = styled.div`
   justify-content: space-between;
 
   h2 {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
     margin: 0;
-    line-height: 1.7;
+    line-height: 1.5;
   }
 `;
 
 export const ButtonReadMore = styled.button`
   width: 200px;
-  padding: 18px 25px;
+  padding: 17px;
   text-decoration: none;
   border: none;
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 `;
