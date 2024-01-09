@@ -1,7 +1,18 @@
 import Image from 'next/image';
-import { Container, RightMenu } from './styles';
+import { CloseButton, Container, MobileMenuButton, RightMenu } from './styles';
+import { useState } from 'react';
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Container>
       <Image
@@ -10,8 +21,9 @@ export function Header() {
         height={40}
         alt='Picture of the author'
       />
-
-      <RightMenu>
+      <MobileMenuButton onClick={toggleMenu}>Menu</MobileMenuButton>
+      <RightMenu className={isMenuOpen ? 'menu-open' : ''}>
+        <CloseButton onClick={closeMenu}>Close</CloseButton>
         <h2>Home</h2>
         <h2>New</h2>
         <h2>Popular</h2>
