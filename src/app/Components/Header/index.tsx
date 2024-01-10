@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { CloseButton, Container, MobileMenuButton, RightMenu } from './styles';
 import { useState } from 'react';
 
-export function Header() {
+export function Header({ setMenuIsVisible }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -21,7 +21,9 @@ export function Header() {
         height={40}
         alt='Picture of the author'
       />
-      <MobileMenuButton onClick={toggleMenu}>Menu</MobileMenuButton>
+      <MobileMenuButton onClick={() => setMenuIsVisible(true)}>
+        Menu
+      </MobileMenuButton>
       <RightMenu className={isMenuOpen ? 'menu-open' : ''}>
         <CloseButton onClick={closeMenu}>Close</CloseButton>
         <h2>Home</h2>

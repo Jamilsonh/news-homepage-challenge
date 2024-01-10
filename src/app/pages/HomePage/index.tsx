@@ -4,11 +4,19 @@ import { Header } from '@/app/Components/Header';
 import LeftBody from '@/app/Components/Body/LeftBody';
 import RightBody from '@/app/Components/Body/RightBody';
 import Footer from '@/app/Components/Footer';
+import { MenuMobile } from '@/app/Components/Header/MenuMobile';
+import { useState } from 'react';
 
 export function HomePage() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <ContainerMain>
-      <Header />
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
       <BodyContainer>
         <LeftBody />
         <RightBody />
