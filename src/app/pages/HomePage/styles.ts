@@ -31,10 +31,6 @@ export const BodyContainer = styled.div`
 `;
 
 export const ContainerPai = styled.div`
-  width: 100%;
   height: 100%;
-  background-color: blue;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
 `;

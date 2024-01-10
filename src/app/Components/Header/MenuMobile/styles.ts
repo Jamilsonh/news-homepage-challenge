@@ -5,17 +5,13 @@ export const Container = styled.section`
   position: absolute;
   width: 80%;
   height: 100vh;
-  top: 0;
-  right: 0;
-  bottom: 0;
   z-index: 5;
   display: flex;
-
   background-color: white;
-
   opacity: 0;
   pointer-events: none;
-  transform: translateX(50px);
+
+  right: 0;
 
   transition: 0.7s;
 

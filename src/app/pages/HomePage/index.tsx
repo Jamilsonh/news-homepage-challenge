@@ -11,19 +11,21 @@ export function HomePage() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
-    <ContainerPai>
-      <ContainerMain isVisible={menuIsVisible}>
-        <MenuMobile
-          menuIsVisible={menuIsVisible}
-          setMenuIsVisible={setMenuIsVisible}
-        />
-        <Header setMenuIsVisible={setMenuIsVisible} />
-        <BodyContainer>
-          <LeftBody />
-          <RightBody />
-        </BodyContainer>
-        <Footer />
-      </ContainerMain>
-    </ContainerPai>
+    <>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <ContainerPai>
+        <ContainerMain isVisible={menuIsVisible}>
+          <Header setMenuIsVisible={setMenuIsVisible} />
+          <BodyContainer>
+            <LeftBody />
+            <RightBody />
+          </BodyContainer>
+          <Footer />
+        </ContainerMain>
+      </ContainerPai>
+    </>
   );
 }
