@@ -1,5 +1,5 @@
 import { IoClose } from 'react-icons/io5';
-import { Container } from './styles';
+import { Container, ContainerMenu } from './styles';
 import { useEffect } from 'react';
 
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
@@ -9,12 +9,14 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
 
   return (
     <Container isVisible={menuIsVisible}>
-      <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
-      <nav>
-        <a href='#'>Home</a>
-        <a href='#'>Produtos</a>
-        <a href='#'>Sobre nós</a>
-      </nav>
+      <IoClose size={60} onClick={() => setMenuIsVisible(false)} />
+      <ContainerMenu>
+        <h2>Home</h2>
+        <h2>New</h2>
+        <h2>Popular</h2>
+        <h2>Trending</h2>
+        <h2>Categories</h2>
+      </ContainerMenu>
     </Container>
   );
 }

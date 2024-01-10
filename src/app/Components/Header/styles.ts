@@ -8,7 +8,6 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-top: 70px;
 `;
 
 export const RightMenu = styled.div`

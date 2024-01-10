@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BodyContainer, ContainerMain } from './styles';
+import { BodyContainer, ContainerMain, ContainerPai } from './styles';
 import { Header } from '@/app/Components/Header';
 import LeftBody from '@/app/Components/Body/LeftBody';
 import RightBody from '@/app/Components/Body/RightBody';
@@ -11,17 +11,19 @@ export function HomePage() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
-    <ContainerMain>
-      <MenuMobile
-        menuIsVisible={menuIsVisible}
-        setMenuIsVisible={setMenuIsVisible}
-      />
-      <Header setMenuIsVisible={setMenuIsVisible} />
-      <BodyContainer>
-        <LeftBody />
-        <RightBody />
-      </BodyContainer>
-      <Footer />
-    </ContainerMain>
+    <ContainerPai>
+      <ContainerMain isVisible={menuIsVisible}>
+        <MenuMobile
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
+        <Header setMenuIsVisible={setMenuIsVisible} />
+        <BodyContainer>
+          <LeftBody />
+          <RightBody />
+        </BodyContainer>
+        <Footer />
+      </ContainerMain>
+    </ContainerPai>
   );
 }

@@ -3,27 +3,19 @@ import css from 'styled-jsx/css';
 
 export const Container = styled.section`
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 100vh;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
   z-index: 5;
   display: flex;
-  align-items: center;
-  justify-content: center;
 
-  background: rgba(17, 18, 17, 0.95);
-  background: linear-gradient(
-    34deg,
-    rgba(25, 88, 24, 0.95) 0%,
-    rgba(17, 18, 17, 0.95) 95%
-  );
+  background-color: white;
 
   opacity: 0;
   pointer-events: none;
-  transform: translateY(50px);
+  transform: translateX(50px);
 
   transition: 0.7s;
 
@@ -32,15 +24,7 @@ export const Container = styled.section`
     top: 1rem;
     right: 1rem;
     transform: rotate(45deg);
-    transition: 0.7s;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
+    transition: 0.5s;
   }
 
   ${({ isVisible }) =>
@@ -48,10 +32,19 @@ export const Container = styled.section`
     css`
       opacity: 1;
       pointer-events: auto;
-      transform: translateY(0px);
+      transform: translateX(0px);
 
       > svg {
         transform: rotate(0deg);
       }
     `}
+`;
+
+export const ContainerMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid black;
+  padding-left: 2rem;
+  margin-top: 10rem;
 `;
