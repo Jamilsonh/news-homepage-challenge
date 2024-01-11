@@ -5,6 +5,11 @@ export const ContainerMain = styled.div`
   height: 580px;
   background-color: hsl(240, 100%, 5%);
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin-top: 25px;
+  }
 `;
 
 export const ContainerArea = styled.div`
@@ -22,6 +27,5 @@ export const Title = styled.h1`
   margin: 0;
   height: 50px;
   display: flex;
-
   margin-bottom: -10px;
 `;

@@ -8,6 +8,10 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const RightMenu = styled.div`

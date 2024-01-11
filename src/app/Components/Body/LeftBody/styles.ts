@@ -8,8 +8,8 @@ export const ContainerMain = styled.div`
   height: 580px;
 
   @media screen and (max-width: 768px) {
-    border: 1px solid black;
-    height: 750px;
+    width: 90%;
+    height: 800px;
   }
 `;
 
@@ -28,7 +28,7 @@ export const ContainerBottom = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: space-around;
-    height: 320px;
+    height: 400px;
   }
 `;
 
@@ -46,7 +46,7 @@ export const ContainerLeft = styled.div`
     line-height: 1;
 
     @media screen and (max-width: 768px) {
-      font-size: 45px;
+      font-size: 55px;
       width: 100%;
     }
   }
@@ -70,8 +70,8 @@ export const ContainerRight = styled.div`
 
     @media screen and (max-width: 768px) {
       width: 100%;
-      height: 100px;
-      font-size: 13px;
+      height: 130px;
+      font-size: 17px;
     }
   }
 

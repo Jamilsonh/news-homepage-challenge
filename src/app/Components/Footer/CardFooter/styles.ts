@@ -5,6 +5,11 @@ export const Container = styled.div`
   width: 30%;
   height: 140px;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 export const ContainerImage = styled.div`

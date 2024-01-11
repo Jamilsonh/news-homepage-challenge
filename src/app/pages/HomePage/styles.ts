@@ -26,7 +26,6 @@ export const BodyContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    border: 1px solid black;
   }
 `;
 

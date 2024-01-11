@@ -10,9 +10,7 @@ export const Container = styled.section`
   background-color: white;
   opacity: 0;
   pointer-events: none;
-
   right: 0;
-
   transition: 0.7s;
 
   > svg {
@@ -40,7 +38,8 @@ export const ContainerMenu = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid black;
   padding-left: 2rem;
   margin-top: 10rem;
+  gap: 25px;
+  font-weight: 300;
 `;
