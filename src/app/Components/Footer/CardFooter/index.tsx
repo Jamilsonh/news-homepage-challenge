@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import {
   Container,
   ContainerImage,
@@ -9,7 +9,19 @@ import {
 } from './styles';
 import Image from 'next/image';
 
-export default function CardFooter({ title, subtitle, image, number }) {
+interface CardFooterProps {
+  title: string;
+  subtitle: string;
+  image: string;
+  number: string;
+}
+
+const CardFooter: FC<CardFooterProps> = ({
+  title,
+  subtitle,
+  image,
+  number,
+}) => {
   return (
     <Container>
       <ContainerImage>
@@ -32,4 +44,6 @@ export default function CardFooter({ title, subtitle, image, number }) {
       </ContainerText>
     </Container>
   );
-}
+};
+
+export default CardFooter;

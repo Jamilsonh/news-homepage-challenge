@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Container, TextSubTitle, TextTitle } from './styles';
 
-export default function ContentBox({ title, subtitle }) {
+interface ContentBoxProps {
+  title: string;
+  subtitle: string;
+}
+
+const ContentBox: FC<ContentBoxProps> = ({ title, subtitle }) => {
   return (
     <Container>
       <TextTitle>{title}</TextTitle>
       <TextSubTitle>{subtitle}</TextSubTitle>
     </Container>
   );
-}
+};
+
+export default ContentBox;

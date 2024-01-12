@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 import css from 'styled-jsx/css';
 
-export const ContainerMain = styled.div`
+type ContainerProps = {
+  isvisible: any;
+};
+
+export const ContainerMain = styled.div<ContainerProps>`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 
-  ${({ isVisible }) =>
-    isVisible &&
+  ${({ isvisible }) =>
+    isvisible &&
     css`
       background-color: rgb(0, 0, 0, 0.5);
     `}

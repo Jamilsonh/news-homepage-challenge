@@ -17,7 +17,7 @@ export function HomePage() {
         setMenuIsVisible={setMenuIsVisible}
       />
       <ContainerPai>
-        <ContainerMain isVisible={menuIsVisible}>
+        <ContainerMain isvisible={menuIsVisible}>
           <Header setMenuIsVisible={setMenuIsVisible} />
           <BodyContainer>
             <LeftBody />

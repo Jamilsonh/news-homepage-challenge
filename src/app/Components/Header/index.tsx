@@ -3,12 +3,13 @@ import { CloseButton, Container, MobileMenuButton, RightMenu } from './styles';
 import { useState } from 'react';
 import { IoReorderThreeSharp } from 'react-icons/io5';
 
-export function Header({ setMenuIsVisible }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+// Define a type for the Header's props
+type HeaderProps = {
+  setMenuIsVisible: (isvisible: boolean) => void;
+};
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+export function Header({ setMenuIsVisible }: HeaderProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -22,7 +23,9 @@ export function Header({ setMenuIsVisible }) {
         height={40}
         alt='Picture of the author'
       />
-      <IoReorderThreeSharp onClick={() => setMenuIsVisible(true)} size={60} />
+      <MobileMenuButton>
+        <IoReorderThreeSharp onClick={() => setMenuIsVisible(true)} size={60} />
+      </MobileMenuButton>
 
       <RightMenu className={isMenuOpen ? 'menu-open' : ''}>
         <CloseButton onClick={closeMenu}>Close</CloseButton>

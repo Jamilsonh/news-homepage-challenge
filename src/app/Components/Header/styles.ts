@@ -47,7 +47,7 @@ export const RightMenu = styled.div`
   }
 `;
 
-export const MobileMenuButton = styled.button`
+export const MobileMenuButton = styled.div`
   @media screen and (min-width: 769px) {
     display: none;
   }
