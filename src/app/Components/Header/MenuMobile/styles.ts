@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import css from 'styled-jsx/css';
 
 type ContainerProps = {
-  isvisible: any;
+  isvisible: boolean;
 };
-
 export const Container = styled.section<ContainerProps>`
   position: absolute;
   width: 80%;
@@ -27,7 +26,7 @@ export const Container = styled.section<ContainerProps>`
 
   ${({ isvisible }) =>
     isvisible &&
-    css`
+    `
       opacity: 1;
       pointer-events: auto;
       transform: translateX(0px);

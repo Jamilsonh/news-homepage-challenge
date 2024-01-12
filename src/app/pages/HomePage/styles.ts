@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import css from 'styled-jsx/css';
 
 type ContainerProps = {
-  isvisible: any;
+  isvisible: boolean;
 };
 
 export const ContainerMain = styled.div<ContainerProps>`
@@ -12,9 +12,9 @@ export const ContainerMain = styled.div<ContainerProps>`
 
   ${({ isvisible }) =>
     isvisible &&
-    css`
-      background-color: rgb(0, 0, 0, 0.5);
-    `}
+    `
+    background-color: rgb(0, 0, 0, 0.5);
+  `}
 `;
 
 export const BodyContainer = styled.div`
